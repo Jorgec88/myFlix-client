@@ -27,15 +27,11 @@ export const MainView = () => {
           return {
             _id: movie._id,
             title: movie.title,
-            imagePath: movie.imagePath,
-            description: movie.description,
-            year: movie.year,
-            genre: {
-              name: movie.genre.name
-            },
-            director: {
-              name: movie.director.name
-            }
+            imagePath: movie.ImagePath,
+            description: movie.Description,
+            year: movie.Year,
+            genre: movie.Genre.Name,
+            director: movie.Director.Name
           };
         });
 
