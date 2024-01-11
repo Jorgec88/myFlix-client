@@ -5,6 +5,7 @@ import { LoginView } from '../login-view/login-view';
 import { SignupView } from '../signup-view/signup-view';
 
 export const MainView = () => {
+
   const storedUser = JSON.parse(localStorage.getItem('user'));
   const storedToken = localStorage.getItem('token');
   const [user, setUser] = useState(storedUser ? storedUser : null);
@@ -20,6 +21,7 @@ export const MainView = () => {
     fetch('https://my-movies-app-c413353d6931.herokuapp.com/movies', {
       headers: { Authorization: `Bearer ${token}` }
     })
+
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
