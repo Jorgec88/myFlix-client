@@ -1,4 +1,19 @@
-$primary: steelblue;
-$body-bg: honeydew;
+$primary: #0dcaf0;
+$body-bg: #222831;
+$body-color: white;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #222831;
+}
+
+.background-image {
+  background-image: url('../img/final.webp');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 
 @import '~bootstrap/scss/bootstrap.scss';

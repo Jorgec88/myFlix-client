@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Col, Row, Container } from 'react-bootstrap';
 import { Button, Card, Form } from 'react-bootstrap';
+import './profile-view.scss';
 
 export const ProfileView = ({ user, movies, setUser }) => {
   const [username, setUsername] = useState(user.Username);
